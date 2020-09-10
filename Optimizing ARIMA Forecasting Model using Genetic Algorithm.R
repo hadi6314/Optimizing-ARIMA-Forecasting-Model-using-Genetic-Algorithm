@@ -1,8 +1,3 @@
-#install.packages("rpart")
-#install.packages("caret")
-#install.packages("randomForest")
-#install.packages("e1071")
-#install.packages("rlang")
 library("e1071")
 library("randomForest")
 library(ISLR)
