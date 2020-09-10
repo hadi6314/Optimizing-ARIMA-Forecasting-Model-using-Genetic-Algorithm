@@ -72,8 +72,6 @@ google.ts = google[,'Close.Last'] %>% ts(frequency = 12) %>% tsclean()
 
 #gg.fit = auto.arima(google.ts, seasonal=TRUE, allowdrift = T)
 
-
-
 maxs = data.frame('max.p' = 2, 'max.d' = 2, 'max.q' = 2, 'max.P' = 2, 'max.D' = 2, 'max.Q' = 2)
 
 population.size = 20
@@ -149,7 +147,6 @@ mutation = function(chroms)
   return(chroms)
 }
 
-
 # The GA algorithm
 install.packages('compiler')
 library(compiler)
@@ -171,14 +168,3 @@ while (convergence > 0.01)
   population = arrange(population, fit)
   convergence =  abs(population[1,'fit'] - current.best)
 }
-
-
-
-
-
-
-
-
-
-
-
